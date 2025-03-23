@@ -93,7 +93,7 @@ document.getElementById('chatForm').addEventListener('submit', async (e) => {
   
     try {
       // Call backend API
-      const response = await fetch("http://localhost:3000/get-response", {
+      const response = await fetch("https://shakti-shield.onrender.com/get-response", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Ensure JSON content type
