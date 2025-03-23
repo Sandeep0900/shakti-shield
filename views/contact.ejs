@@ -1,0 +1,37 @@
+<section class="contact-section">
+    <h1>We are here to "Help you!"</h1>
+    <p> A secure way to speak up.</p>
+
+    <!-- Contact Form -->
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Hidden Fields -->
+      <input type="hidden" name="access_key" value="5c6b0839-d1d5-4761-89ea-d14f79786157">
+      <input type="checkbox" name="botcheck" style="display: none;">
+
+      <!-- Name Input -->
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Message Input -->
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment"></i> Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <!-- Success Message (Hidden by default) -->
+    <div id="successMessage" class="success-message" style="display: none;">
+      <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+    </div>
+  </section>

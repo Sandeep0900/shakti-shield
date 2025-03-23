@@ -1,0 +1,35 @@
+<section class="contacts-section">
+  <h1>Trusted Contacts</h1>
+  <p>Manage your trusted contacts for emergency situations.</p>
+
+  <!-- Add Contact Button -->
+  <button class="add-contact-button" id="addContactButton">+ Add Contact</button>
+
+  <!-- Contacts List -->
+  <div class="contacts-container" id="contactsContainer">
+    <!-- Contacts will be dynamically added here -->
+  </div>
+
+  <!-- Add/Edit Contact Modal -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modalTitle">Add New Contact</h2>
+      <form class="add-contact-form" id="contactForm">
+        <input type="hidden" id="contactId" name="contactId">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter contact name" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" />
+        <button type="submit" class="save-contact-button">Save</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+  <script src="/js/contacts.js"></script>

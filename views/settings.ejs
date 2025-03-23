@@ -1,0 +1,62 @@
+<div class="settings-section">
+    <h1>Settings</h1>
+    <p>Manage your account settings and preferences here.</p>
+  
+    <!-- Settings Form -->
+    <div class="settings-container">
+      <!-- Section: Account Information -->
+      <div class="settings-card">
+        <h2>Account Information</h2>
+        <form class="settings-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" />
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+  
+          <button type="submit" class="save-button">Save Changes</button>
+        </form>
+      </div>
+  
+      <!-- Section: Security Settings -->
+      <div class="settings-card">
+        <h2>Security Settings</h2>
+        <form class="settings-form">
+            <label for="password">Current Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter new password" />
+          <label for="password">Change Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter new password" />
+  
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password" />
+  
+          <button type="submit" class="save-button">Update Password</button>
+        </form>
+      </div>
+  
+      <!-- Section: Notifications -->
+      <div class="settings-card">
+        <h2>Notifications</h2>
+        <form class="settings-form">
+          <label>
+            <input type="checkbox" name="email-notifications" checked />
+            Email Notifications
+          </label>
+  
+          <label>
+            <input type="checkbox" name="sms-notifications" />
+            SMS Notifications
+          </label>
+  
+          <button type="submit" class="save-button">Save Preferences</button>
+        </form>
+      </div>
+  
+      <!-- Section: Trusted Contacts -->
+      <div class="settings-card">
+        <h2>Trusted Contacts</h2>
+        <p>Add or manage trusted contacts for emergency situations.</p>
+        <button class="manage-contacts-button">Manage Contacts</button>
+      </div>
+    </div>
+  </div>

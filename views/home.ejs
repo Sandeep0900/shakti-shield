@@ -1,0 +1,147 @@
+<div class="hero-section">
+    <h1>Shakti Shield</h1>
+    <p>Your personal safety companion, designed to provide peace of mind and immediate assistance when you need it most.</p>
+    <!-- SOS Button -->
+<button id="safeRouteButton4" class="sos-button">
+    <i class="fas fa-exclamation-triangle"></i>
+    SOS
+  </button>
+  
+  <!-- Popup Box -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <span class="close-popup" onclick="closePopup()">&times;</span>
+      <h2>SOS Alert</h2>
+      <form id="sosForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="5c6b0839-d1d5-4761-89ea-d14f79786157">
+        
+        <!-- Hidden Inputs for Time and Location -->
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+  
+        <!-- Recipient Email Input -->
+        <label for="email">Recipient Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter recipient's email" required>
+  
+        <!-- Message (Hidden) -->
+        <input type="hidden" name="message" value="SOS">
+  
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" style="display: none;">
+  
+        <button type="submit" class="send-alert-button">Send Alert</button>
+      </form>
+      <p id="alertStatus" class="status-message"></p>
+    </div>
+  </div>
+
+  </div>
+  
+  <section class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="action-grid">
+      <div class="action-item" id="safeRouteButton">
+        <i class="fas fa-phone-alt red"></i>
+        <p>Emergency Call</p>
+      </div>
+
+      <!-- SafeRout6============================== -->
+      <!-- Safe Route Action Item -->
+<div class="action-item" id="safeRouteButton2">
+  <i class="fas fa-route green"></i>
+  <p>Safe Route</p>
+</div>
+
+<!-- Popup Box -->
+<div class="popup-overlay" id="popupOverlay1">
+  <div class="popup-box">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <p>Still, we are working on it.</p>
+  </div>
+</div>
+
+      <!-- 6====================================== -->
+
+      <a href="https://www.google.com/maps/@20.4601515,75.87549,9.42z?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+      <div class="action-item">
+        <i class="fas fa-map-marker-alt blue"></i>
+        <p>Share Location</p>
+      </div></a>
+
+
+      <!--Safety Tips ========================= -->
+
+
+      <!-- Safety Tips Button -->
+<div class="action-item" id="safetyTipsButton">
+    <i class="fas fa-shield-alt purple"></i>
+    <p>Safety Tips</p>
+  </div>
+  
+  <!-- Popup Chatbot Box -->
+  <div class="popup-overlay" id="chatbotOverlay">
+    <div class="chatbot-box">
+      <span class="close-chatbot" onclick="closeChatbot()">&times;</span>
+      <h2>Women Safety Chatbot</h2>
+      <div class="chat-container">
+        <div id="chatMessages" class="chat-messages">
+          <!-- Chat messages will appear here -->
+        </div>
+        <form id="chatForm">
+          <input type="text" id="userInput" placeholder="Ask a question about women's safety..." required />
+          <button type="submit" class="send-button">Send</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+
+       <!--Safety Tips ========================= -->
+
+
+      <div class="action-item" id="safeRouteButton3">
+        <i class="fas fa-clock orange"></i>
+        <p>Set Timer</p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="key-features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+           <i class="fas fa-exclamation-triangle red"></i>
+           <h3>SOS Alert</h3>
+           <p>Send immediate alerts to your emergency contacts with your location.</p>        
+      </div>
+      <a href="/contacts" style="text-decoration: none;">
+      <div class="feature-card">
+        <i class="fas fa-users blue"></i>
+        <h3>Trusted Contacts</h3>
+        <p>Add and manage people you can count on in emergency situations.</p>
+      </div></a>
+
+      <a href="/crime-reports" style="text-decoration: none;">
+      <div class="feature-card">
+        <i class="fas fa-file-alt purple"></i>
+        <h3>Secure Documents</h3>
+        <p>Store important documents securely for quick access when needed.</p>
+      </div></a>
+      
+      <a href="https://www.google.com/maps/@20.4601515,75.87549,9.42z?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+      <div class="feature-card">
+        <i class="fas fa-map green"></i>
+        <h3>Safe Routes</h3>
+        <p>Find and navigate through safer paths in your area.</p>
+      </div></a>
+
+
+      <a href="/contact" style="text-decoration: none;">
+      <div class="feature-card">
+        <i class="fas fa-comment-dots orange"></i>
+        <h3>VoiceUp</h3>
+        <p>Encouraging women to report concerns.</p>
+      </div></a>
+    </div>
+  </div>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/"><img src="/images/logo.jpg" alt="Shakti Shield Logo"></a>
+            <span class="logo-text"><a href="/">Shakti Shield</a></span>
+          </div>
+      
+          <!-- Slogan -->
+          <div class="slogan"><b>Shakti Shield – Your Safety, Our Mission</b></div>
+      
+          <!-- Hamburger Menu Icon -->
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      
+          <!-- Navigation Links -->
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/settings">Settings</a></li>
+          </ul>
+      
+          <!-- Login Button -->
+          <a href="/login"><button class="login-button">Login</button></a>
+        </nav>
+      </header>
+    
+ <br>
+  <main>
+    <%- body %> <!-- This will inject the content of individual pages -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shakti Shield. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+  <script src="../public/js/crimeReport.js"></script>
+
+  <script src="../public/js/auth.js"></script>
+  <script src="../public/js/contacts.js"></script>
+</body>
+</html>

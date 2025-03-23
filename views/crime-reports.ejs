@@ -1,0 +1,31 @@
+    <section class="crime-reports-section">
+      <h1>Crime Reports</h1>
+      <p>Manage your crime-related reports here.</p>
+
+      <!-- Add Report Button -->
+      <button class="add-report-button" id="addReportButton">+ Add Report</button>
+
+      <!-- Reports List -->
+      <div class="reports-container" id="reportsContainer">
+        <!-- Reports will be dynamically added here -->
+      </div>
+
+      <!-- Add/Edit Report Modal -->
+      <div class="modal" id="reportModal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2 id="modalTitle">Add New Report</h2>
+          <form class="report-form" id="reportForm">
+            <input type="hidden" id="reportId" name="reportId">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter report title" required />
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Describe the incident" required></textarea>
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" />
+            <button type="submit" class="save-report-button">Save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+ 
